@@ -13,11 +13,12 @@ html {
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-    min-width: 100hv;
+    width: 1280px;
+    height: 720px;
+    margin: 0px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 #tela {
@@ -150,52 +151,4 @@ body {
     /* Apps */
     
 
-/* RESPONSIVIDADE */
-
-/* Telas menores que 1280px (notebooks pequenos) */
-@media (max-width: 1280px) {
-    #tela {
-        transform: scale(0.9);
-        transform-origin: center;
-    }
-}
-
-/* Tablets grandes */
-@media (max-width: 1024px) {
-    #tela {
-        transform: scale(0.75);
-        transform-origin: center;
-    }
-}
-
-/* Tablets médios */
-@media (max-width: 768px) {
-    #tela {
-        transform: scale(0.6);
-        transform-origin: center;
-    }
-}
-
-/* Smartphones grandes */
-@media (max-width: 600px) {
-    #tela {
-        transform: scale(0.5);
-        transform-origin: center;
-    }
-}
-
-/* Smartphones médios */
-@media (max-width: 480px) {
-    #tela {
-        transform: scale(0.4);
-        transform-origin: center;
-    }
-}
-
-/* Smartphones pequenos */
-@media (max-width: 360px) {
-    #tela {
-        transform: scale(0.32);
-        transform-origin: center;
-    }
-}
+/* REPONSIVIDADE*/
