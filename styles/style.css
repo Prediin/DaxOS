@@ -55,7 +55,7 @@ body {
 
     /*Menu Iniciar*/
     #fecharMenuIniciar {
-        transition: all 0.2s ease-in-out;
+        transition: all 0.3s ease-in-out;
         visibility: hidden;
         opacity: 0;
 
@@ -80,7 +80,7 @@ body {
     }
 
     #menuIniciar {
-        transition: all 0.2s ease-in-out;
+        transition: all 0.3s ease-in-out;
 
         width: 2.5%;
         margin: 0px 5px 0px 5px;
@@ -98,10 +98,9 @@ body {
         /* Janela Menu Iniciar*/
         #menuIniciarJanela {
             visibility: hidden;
-            opacity: 0;
-            transform: scale(0.8);
+            transform: scaley(0);
             transform-origin: bottom left;
-            transition: all 0.2s ease-in-out;
+            transition: all 0.3s ease-in-out;
 
             color: white;
             background: black;
@@ -123,29 +122,31 @@ body {
         }
 
         #appsMenuIniciar {
-    width: 100%;
-    height: 72%;
-    margin-top: 10px;
-    border-top: 2px solid white;
-    border-right: 2px solid white;
-    border-radius: 0px 20px 0px 0px;
+            width: 100%;
+            height: 72%;
+            margin-top: 10px;
+            border-top: 2px solid white;
+            border-right: 2px solid white;
+            border-radius: 0px 20px 0px 0px;
 
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 1fr);
 
-    gap: 10px;
-    padding: 10px;
-}
+            gap: 10px;
+            padding: 10px;
+        }
 
-.appMenuIniciar {
-    border-radius: 10px;
-    background: lightgrey;
-    color: black;
+        .appMenuIniciar {
+            border-radius: 10px;
+            background: lightgrey;
+            color: black;
 
-    width: 100%;
-    height: 100%;
-}
+            width: 100%;
+            height: 100%;
+        }
 
     /* Apps */
     
+
+/* REPONSIVIDADE*/
