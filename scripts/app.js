@@ -6,7 +6,7 @@ const menuIniciarJanela = document.getElementById('menuIniciarJanela');
 //Funcionalidades:
 const toggleMenuIniciar = () => {
     const aberto = menuIniciarJanela.classList.toggle('open');
-    menuIniciar.style.transform = aberto ? 'translateY(-1180%)' : 'translateY(0)';
+    menuIniciar.style.transform = aberto ? 'translateY(-1100%)' : 'translateY(0)';
 };
 
 menuIniciar.addEventListener('click', toggleMenuIniciar);
