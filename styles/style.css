@@ -1,0 +1,151 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* TELA */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    min-height: 100hv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tela {
+    width: 1280px;
+    height: 720px;
+    background: linear-gradient(45deg, rgb(1, 55, 91), rgb(57, 119, 79), rgb(29, 28, 34));
+    border: 2px solid black;
+    position: relative;
+}
+
+/* WALLPAPER */
+.wallpaper {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* BARRA DE TAREFAS */
+#barraDeTarefas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6%;
+    background: black;
+    display: flex;
+    align-items: center;
+}
+
+.linhaVertical {
+  width: 3px;
+  height: 80%;
+  border-left: 2px solid #ffffff;
+}
+
+    /*Menu Iniciar*/
+    #fecharMenuIniciar {
+        transition: all 0.2s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+
+        width: 2.5%;
+        margin: 0px -2.9% 0px 5px;
+        transform: scale(1.5);
+    }
+
+    #fecharMenuIniciar:hover {
+        filter: drop-shadow(0px 0px 3px white);
+        transform: scale(1.6);
+    }
+
+    #fecharMenuIniciar:active {
+        transform: scale(0.95);
+    }
+
+    #menuIniciarJanela.open + #barraDeTarefas #fecharMenuIniciar {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    #menuIniciar {
+        transition: all 0.2s ease-in-out;
+
+        width: 2.5%;
+        margin: 0px 5px 0px 5px;
+    }
+
+    #menuIniciar:hover {
+        filter: drop-shadow(0px 0px 3px white);
+        transform: scale(1.05);
+    }
+
+    #menuIniciar:active {
+        transform: scale(0.95);
+    }
+
+        /* Janela Menu Iniciar*/
+        #menuIniciarJanela {
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(0.8);
+            transform-origin: bottom left;
+            transition: all 0.2s ease-in-out;
+
+            color: white;
+            background: black;
+            width: 35%;
+            height: 55%;
+            padding: 3px 20px 20px 45px;
+            border-radius: 0px 20px 0px 0px;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        #menuIniciarJanela.open {
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1);
+            transition-delay: 0s;
+        }
+
+        #appsMenuIniciar {
+    width: 100%;
+    height: 72%;
+    margin-top: 10px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 0px 20px 0px 0px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    gap: 10px;
+    padding: 10px;
+}
+
+.appMenuIniciar {
+    border-radius: 10px;
+    background: lightgrey;
+    color: black;
+
+    width: 100%;
+    height: 100%;
+}
+
+    /* Apps */
+    
