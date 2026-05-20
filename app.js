@@ -20,8 +20,8 @@ function ativarDragComInercia(elemento) {
     let ultimoY = 0;
 
     // ===== CONFIG =====
-    const suavidade = 0.25; // menor = mais "gelo"
-    const atrito = 0.99;
+    const suavidade = 0.35; // menor = mais "gelo"
+    const atrito = 1;
 
     // ===== ESTILO =====
     elemento.style.position = "fixed";
